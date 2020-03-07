@@ -1,0 +1,6 @@
+#!ipxe
+imgfree
+set url https://github.com/thelamer/boot-assets/releases/download/proxmox/
+kernel ${url}linux26 initrd=initrd
+initrd ${url}initrd
+boot
